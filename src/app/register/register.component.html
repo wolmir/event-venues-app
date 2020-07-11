@@ -1,1 +1,9 @@
-<p>register works!</p>
+<div *ngIf="role">
+    <p *ngIf="role === 'attendee'">
+        Attendee
+    </p>
+
+    <p *ngIf="role === 'venue-owner'">
+        Venue Owner
+    </p>
+</div>

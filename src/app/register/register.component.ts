@@ -8,13 +8,15 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class RegisterComponent implements OnInit {
 
+  public role: string;
+
   constructor(
     private route: ActivatedRoute
   ) { }
 
   ngOnInit(): void {
     this.route.params.subscribe((values) => {
-      console.log(values);
+      this.role = values.role;
     });
   }
 
