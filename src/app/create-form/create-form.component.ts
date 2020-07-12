@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-create-form',
@@ -7,9 +8,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CreateFormComponent implements OnInit {
 
+  questions = [
+    {
+      question: new FormControl('Type your question here.'),
+    }
+  ];
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  addQuestion() {
+    this.questions.push({
+      question: new FormControl('Type your question here.'),
+    });
+  }
+
+  createForm() {
+
   }
 
 }

@@ -23,9 +23,9 @@
                    required
                    name="text"></p>
 
-        <div class="w3-margin-top">
+        <div class="w3-margin-top" *ngFor="let item of questions">
             <p>
-                <textarea class="w3-input w3-border" rows="3" placeholder="Type the question here."></textarea>
+                <textarea class="w3-input w3-border" rows="3" placeholder="Type the question here." [formControl]="item.question"></textarea>
             </p>
             <p>Which answer should flag the attendee?
                 <label class="switch">
@@ -37,6 +37,14 @@
                 </label>
             </p>
         </div>
+
+        <p>
+            <button class="w3-button w3-teal w3-input w3-border" (click)="addQuestion()">Add Question</button>
+        </p>
+
+        <p>
+            <button class="w3-button w3-teal w3-input w3-border" (click)="createForm()">Create Form</button>
+        </p>
     </div>
 </div>
 
