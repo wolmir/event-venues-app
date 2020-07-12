@@ -12,13 +12,15 @@ import { RouterModule } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { EntryComponent } from './entry/entry.component';
+import { EventsListComponent } from './events-list/events-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    EntryComponent
+    EntryComponent,
+    EventsListComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

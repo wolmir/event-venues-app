@@ -12,6 +12,8 @@ export class RegistrationService {
   registerAsVenueOwner(data) {
     this.venueOwners.push(data);
 
+    console.log(this.venueOwners);
+
     return Promise.resolve({ success: true });
   }
 
