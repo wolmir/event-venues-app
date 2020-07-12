@@ -14,6 +14,7 @@ import { RegisterComponent } from './register/register.component';
 import { EntryComponent } from './entry/entry.component';
 import { EventsListComponent } from './events-list/events-list.component';
 import { CreateEventComponent } from './create-event/create-event.component';
+import { CreateFormComponent } from './create-form/create-form.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { CreateEventComponent } from './create-event/create-event.component';
     RegisterComponent,
     EntryComponent,
     EventsListComponent,
-    CreateEventComponent
+    CreateEventComponent,
+    CreateFormComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

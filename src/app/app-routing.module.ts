@@ -5,6 +5,7 @@ import { RegisterComponent } from './register/register.component';
 import { EntryComponent } from './entry/entry.component';
 import { EventsListComponent } from './events-list/events-list.component';
 import { CreateEventComponent } from './create-event/create-event.component';
+import { CreateFormComponent } from './create-form/create-form.component';
 
 
 const routes: Routes = [
@@ -27,6 +28,10 @@ const routes: Routes = [
   {
     path: 'create-event',
     component: CreateEventComponent,
+  },
+  {
+    path: 'create-form',
+    component: CreateFormComponent,
   }
 ];
 
