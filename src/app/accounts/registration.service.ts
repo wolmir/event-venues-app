@@ -26,6 +26,7 @@ export class RegistrationService {
   }
 
   login(email: string, password: string) {
+    debugger;
     let authenticated;
 
     this.venueOwners.forEach((user) => {
