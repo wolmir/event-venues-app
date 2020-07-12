@@ -13,6 +13,7 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { EntryComponent } from './entry/entry.component';
 import { EventsListComponent } from './events-list/events-list.component';
+import { CreateEventComponent } from './create-event/create-event.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { EventsListComponent } from './events-list/events-list.component';
     LoginComponent,
     RegisterComponent,
     EntryComponent,
-    EventsListComponent
+    EventsListComponent,
+    CreateEventComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
