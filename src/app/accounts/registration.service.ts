@@ -18,8 +18,6 @@ export class RegistrationService {
   registerAsVenueOwner(data) {
     this.venueOwners.push(data);
 
-    console.log(this.venueOwners);
-
     return Promise.resolve({ success: true });
   }
 
@@ -32,11 +30,9 @@ export class RegistrationService {
   }
 
   login(email: string, password: string) {
-    console.log(email, password);
     let authenticated;
 
     this.venueOwners.forEach((user) => {
-      console.log(user);
       if (user.email === email && user.password === password) {
         authenticated = user;
       }
