@@ -1,26 +1,62 @@
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
-    <div class="w3-bar w3-white w3-card" id="myNavbar">
-        <a href="index.html" class="w3-bar-item w3-button w3-wide">Home</a>
+    <div class="w3-bar w3-white w3-card"
+         id="myNavbar">
+        <a href="index.html"
+           class="w3-bar-item w3-button w3-wide">Home</a>
     </div>
 </div>
 
 <!-- Contact Section -->
-<div class="w3-container w3-light-grey" style="padding:90px 16px" id="form">
+<div class="w3-container w3-light-grey"
+     style="padding:90px 16px"
+     id="form">
     <div *ngIf="role">
         <div>
-            <p><input class="w3-input w3-border" type="text" placeholder="First Name" required name="text"></p>
-            <p><input class="w3-input w3-border" type="text" placeholder="Last Name" required name="text"></p>
-            <p><input class="w3-input w3-border" type="text" placeholder="Address" required name="text"></p>
+            <p><input class="w3-input w3-border"
+                       type="text"
+                       placeholder="First Name"
+                       [formControl]="firstNameControl"
+                       required
+                       name="text"></p>
+            <p><input class="w3-input w3-border"
+                       type="text"
+                       placeholder="Last Name"
+                       [formControl]="lastNameControl"
+                       required
+                       name="text"></p>
+            <p><input class="w3-input w3-border"
+                       type="text"
+                       placeholder="Address"
+                       [formControl]="addressControl"
+                       required
+                       name="text"></p>
             <p><button class="w3-button w3-teal w3-input w3-border">Use current location</button></p>
-            <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="address"></p>
-            <p><input class="w3-input w3-border" type="password" placeholder="Password" required name="address"></p>
-            <p><input class="w3-input w3-border" type="password" placeholder="Confirm Password" required name="address"></p>
+            <p><input class="w3-input w3-border"
+                       type="text"
+                       placeholder="Email"
+                       [formControl]="emailControl"
+                       required
+                       name="address"></p>
+            <p><input class="w3-input w3-border"
+                       type="password"
+                       placeholder="Password"
+                       [formControl]="passwordControl"
+                       required
+                       name="address"></p>
+            <p><input class="w3-input w3-border"
+                       type="password"
+                       placeholder="Confirm Password"
+                       required
+                       name="address"></p>
             <p>
-                <button class="w3-input w3-border w3-btn" style="width:100%"><i class="fa fa-upload"></i> Image</button>
+                <button class="w3-input w3-border w3-btn"
+                        style="width:100%"><i class="fa fa-upload"></i> Image</button>
             </p>
             <p>
-                <button class="w3-button w3-teal w3-input w3-border" type="submit">Register</button>
+                <button class="w3-button w3-teal w3-input w3-border"
+                        (click)="register()"
+                        type="submit">Register</button>
             </p>
         </div>
     </div>
