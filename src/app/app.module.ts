@@ -8,12 +8,14 @@ import { environment } from '../environments/environment';
 import { RouterModule } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { EntryComponent } from './entry/entry.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    EntryComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
