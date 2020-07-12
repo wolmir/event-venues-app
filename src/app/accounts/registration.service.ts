@@ -26,10 +26,11 @@ export class RegistrationService {
   }
 
   login(email: string, password: string) {
-    debugger;
+    console.log(email, password);
     let authenticated;
 
     this.venueOwners.forEach((user) => {
+      console.log(user);
       if (user.email === email && user.password === password) {
         authenticated = user;
       }
