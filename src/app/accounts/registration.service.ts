@@ -5,10 +5,14 @@ import { Injectable } from '@angular/core';
 })
 export class RegistrationService {
 
+  private venueOwners = [];
+
   constructor() { }
 
-  registerAsVenueOwner() {
+  registerAsVenueOwner(data) {
+    this.venueOwners.push(data);
 
+    return Promise.resolve({ success: true });
   }
 
   registerAsAttendee() {
@@ -19,5 +23,19 @@ export class RegistrationService {
 
   }
 
-  login() {}
+  login(email: string, password: string) {
+    let authenticated;
+
+    this.venueOwners.forEach((user) => {
+      if (user.email === email && user.password === password) {
+        authenticated = user;
+      }
+    });
+
+    if (authenticated) {
+      return Promise.resolve(authenticated);
+    }
+
+    return Promise.reject({ errorMessage: 'User not found' });
+  }
 }

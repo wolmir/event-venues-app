@@ -25,7 +25,10 @@ export class LoginComponent implements OnInit {
   }
 
   login(): void {
-    this.registrationService.login();
+    this.registrationService.login(
+      this.emailControl.value,
+      this.passwordControl.value
+    );
   }
 
 }
