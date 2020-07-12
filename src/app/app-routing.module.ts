@@ -20,7 +20,7 @@ const routes: Routes = [
     component: RegisterComponent,
   },
   {
-    path: '/events-list',
+    path: 'events-list',
     component: EventsListComponent,
   }
 ];
