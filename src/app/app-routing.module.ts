@@ -7,7 +7,7 @@ import { EntryComponent } from './entry/entry.component';
 
 const routes: Routes = [
   {
-    path: '/',
+    path: '',
     component: EntryComponent,
   },
   {
