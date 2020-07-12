@@ -7,7 +7,8 @@ export class RegistrationService {
 
   private venueOwners = [];
 
-  constructor() { }
+  constructor() {
+  }
 
   registerAsVenueOwner(data) {
     this.venueOwners.push(data);

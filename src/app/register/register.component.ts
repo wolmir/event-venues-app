@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { FormControl } from '@angular/forms';
 import { RegistrationService } from '../accounts/registration.service';
 
@@ -20,6 +20,7 @@ export class RegisterComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
+    private router: Router,
     private registrationService: RegistrationService,
   ) {
     this.firstNameControl = new FormControl('');
@@ -41,6 +42,9 @@ export class RegisterComponent implements OnInit {
       lastName: this.lastNameControl.value,
       password: this.passwordControl.value,
       email: this.emailControl.value,
+    })
+    .then(() => {
+      this.router.navigateByUrl('/login');
     });
   }
 
