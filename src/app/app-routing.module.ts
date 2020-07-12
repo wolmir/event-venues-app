@@ -7,6 +7,7 @@ import { EventsListComponent } from './events-list/events-list.component';
 import { CreateEventComponent } from './create-event/create-event.component';
 import { CreateFormComponent } from './create-form/create-form.component';
 import { AnswerQuestionsComponent } from './answer-questions/answer-questions.component';
+import { GreenBoxComponent } from './green-box/green-box.component';
 
 
 const routes: Routes = [
@@ -37,6 +38,10 @@ const routes: Routes = [
   {
     path: 'answer-questions',
     component: AnswerQuestionsComponent,
+  },
+  {
+    path: 'green-box',
+    component: GreenBoxComponent,
   }
 ];
 

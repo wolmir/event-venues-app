@@ -16,6 +16,7 @@ import { EventsListComponent } from './events-list/events-list.component';
 import { CreateEventComponent } from './create-event/create-event.component';
 import { CreateFormComponent } from './create-form/create-form.component';
 import { AnswerQuestionsComponent } from './answer-questions/answer-questions.component';
+import { GreenBoxComponent } from './green-box/green-box.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { AnswerQuestionsComponent } from './answer-questions/answer-questions.co
     EventsListComponent,
     CreateEventComponent,
     CreateFormComponent,
-    AnswerQuestionsComponent
+    AnswerQuestionsComponent,
+    GreenBoxComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
