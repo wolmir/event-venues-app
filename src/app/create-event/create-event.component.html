@@ -28,11 +28,12 @@
                 </select>
             </p>
             <p><input class="w3-input w3-border" type="text" placeholder="Address" required name="address"></p>
+            <p><button class="w3-button w3-teal w3-input w3-border">Use current location</button></p>
             <p>
                 <button class="w3-input w3-border w3-btn" style="width:100%"><i class="fa fa-upload"></i> Image</button>
             </p>
             <p>
-                <button class="w3-button w3-teal w3-input w3-border" type="submit">Create Event</button>
+                <button class="w3-button w3-teal w3-input w3-border" (click)="createEvent()">Create Event</button>
             </p>
         </div>
     </div>
