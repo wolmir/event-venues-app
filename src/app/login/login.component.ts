@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
 
 import { RegistrationService } from '../accounts/registration.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -15,6 +16,7 @@ export class LoginComponent implements OnInit {
   passwordControl: FormControl;
 
   constructor(
+    private router: Router,
     private registrationService: RegistrationService
   ) {
     this.emailControl = new FormControl('', [Validators.required]);
@@ -28,7 +30,10 @@ export class LoginComponent implements OnInit {
     this.registrationService.login(
       this.emailControl.value,
       this.passwordControl.value
-    );
+    )
+    .then(() => {
+      this.router.navigateByUrl('/events-list');
+    });
   }
 
 }
