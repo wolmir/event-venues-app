@@ -5,7 +5,12 @@ import { Injectable } from '@angular/core';
 })
 export class RegistrationService {
 
-  private venueOwners = [];
+  private venueOwners = [{
+    firstName: 'John',
+    lastName: 'Doe',
+    email: 'john.doe@host.com',
+    password: '1234',
+  }];
 
   constructor() {
   }
