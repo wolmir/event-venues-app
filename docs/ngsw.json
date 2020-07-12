@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1594594406824,
+  "timestamp": 1594594730517,
   "index": "/event-venues-app/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "/event-venues-app/favicon.ico",
         "/event-venues-app/index.html",
-        "/event-venues-app/main.eac3695b0aa78b66c787.js",
+        "/event-venues-app/main.c4b5cd80317c357285c4.js",
         "/event-venues-app/manifest.webmanifest",
         "/event-venues-app/polyfills.a4021de53358bb0fec14.js",
         "/event-venues-app/runtime.e227d1a0e31cbccbf8ec.js",
@@ -74,8 +74,8 @@
     "/event-venues-app/assets/styles/style.css": "c53804c9fabe7a78aa515629a6b47701f54d2697",
     "/event-venues-app/assets/styles/theme-teal.css": "bbda0656b0c243d2e10f3f54b8311f4fa427bbbe",
     "/event-venues-app/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/event-venues-app/index.html": "91c07c6d9077d4a76f94187e08223589b9a57eaa",
-    "/event-venues-app/main.eac3695b0aa78b66c787.js": "d625eed5ef59e3882d7748167a5fbaf0a82a2588",
+    "/event-venues-app/index.html": "89ef726f87ec625eb538959a996588d8e3ad7678",
+    "/event-venues-app/main.c4b5cd80317c357285c4.js": "94b1abf978c67e806811d95e0ef60fbd9c22f252",
     "/event-venues-app/manifest.webmanifest": "a738d7769f50b684641e2da02604e0eefa4c0b5e",
     "/event-venues-app/polyfills.a4021de53358bb0fec14.js": "b47435a9ef2a4829f2f9dfd35599bde3614981b1",
     "/event-venues-app/runtime.e227d1a0e31cbccbf8ec.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",

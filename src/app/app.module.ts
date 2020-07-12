@@ -15,6 +15,7 @@ import { EntryComponent } from './entry/entry.component';
 import { EventsListComponent } from './events-list/events-list.component';
 import { CreateEventComponent } from './create-event/create-event.component';
 import { CreateFormComponent } from './create-form/create-form.component';
+import { AnswerQuestionsComponent } from './answer-questions/answer-questions.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { CreateFormComponent } from './create-form/create-form.component';
     EntryComponent,
     EventsListComponent,
     CreateEventComponent,
-    CreateFormComponent
+    CreateFormComponent,
+    AnswerQuestionsComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
