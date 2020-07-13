@@ -8,6 +8,7 @@ import { CreateEventComponent } from './create-event/create-event.component';
 import { CreateFormComponent } from './create-form/create-form.component';
 import { AnswerQuestionsComponent } from './answer-questions/answer-questions.component';
 import { GreenBoxComponent } from './green-box/green-box.component';
+import { BarcodeComponent } from './barcode/barcode.component';
 
 
 const routes: Routes = [
@@ -42,6 +43,10 @@ const routes: Routes = [
   {
     path: 'green-box',
     component: GreenBoxComponent,
+  },
+  {
+    path: 'barcode',
+    component: BarcodeComponent,
   }
 ];
 
