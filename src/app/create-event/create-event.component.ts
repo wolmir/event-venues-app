@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-create-event',
@@ -7,6 +8,8 @@ import { Router } from '@angular/router';
   styleUrls: ['./create-event.component.css']
 })
 export class CreateEventComponent implements OnInit {
+
+  timeLimitedControl = new FormControl(false);
 
   constructor(
     private router: Router,

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-create-form',
@@ -14,7 +15,9 @@ export class CreateFormComponent implements OnInit {
     }
   ];
 
-  constructor() { }
+  constructor(
+    private router: Router
+  ) { }
 
   ngOnInit(): void {
   }
@@ -26,7 +29,7 @@ export class CreateFormComponent implements OnInit {
   }
 
   createForm() {
-
+    this.router.navigateByUrl('/create-event');
   }
 
 }
